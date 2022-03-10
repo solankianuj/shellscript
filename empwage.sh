@@ -1,13 +1,13 @@
-#!/bin/bash -x 
+#!/bin/bash -x
+
 ispresent=1;
-emprateperhr=20;
+randomCheck=$((RANDOM%2));
 
-randomecheck=$((RANDOME%2));
-if  [$ispresent -eq $randomecheck ];
-then 
-    emphrs=8;
-
-	  salary=$(($emphrs*$emprateperhr));
+if [ $ispresent -eq $randomCheck ];
+then
+	empRatePerHr=20;
+	empHrs=8;
+	salary=$(($empHrs*$empRatePerHr));
 else
-   salary=0;
+	salary=0;
 fi
