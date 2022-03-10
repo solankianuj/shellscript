@@ -1,8 +1,7 @@
 #!/bin/bash -x 
 ispresent=1;
-
-randomecheck=$((RANDOME%2));
-if  [$ispresent -eq $randomecheck ];
+randomCheck=$((RANDOM%2));
+if  [$ispresent -eq $randomeCheck ];
 then 
   echo " employe is present";
 else
